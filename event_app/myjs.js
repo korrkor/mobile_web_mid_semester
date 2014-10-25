@@ -11,7 +11,7 @@ function syncAjax(u) {
 
 function check_save(name, email, number)
 {
-    var u = "event_action.php?cmd=1&name=" + name + "&email=" + email + "&number=" + number;
+    var u = "http://50.63.128.135/~csashesi/class2015/kutorkor-kotey-afutu/midsem_project/event_action.php?cmd=1&name=" + name + "&email=" + email + "&number=" + number;
 //     prompt("u",u);
     return syncAjax(u);
 }
@@ -49,7 +49,7 @@ function saveDone(data) {
 
 function check_login_admin(user_name,password)
 {
-    var u = ("event_action.php?cmd=3&user_name=" + user_name + "&password=" + password);
+    var u = ("http://50.63.128.135/~csashesi/class2015/kutorkor-kotey-afutu/midsem_project/event_action.php?cmd=3&user_name=" + user_name + "&password=" + password);
 //    prompt("u",u);
     return syncAjax(u);
 }
@@ -81,7 +81,7 @@ function login_admin()
 $(document).on("pagecreate", "#admin_view", function () {
 //    alert("hrrerrrr");
 
-    var r = syncAjax("event_action.php?cmd=2");
+    var r = syncAjax("http://50.63.128.135/~csashesi/class2015/kutorkor-kotey-afutu/midsem_project/event_action.php?cmd=2");
 
     for (var i in r)
     {
