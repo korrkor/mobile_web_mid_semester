@@ -12,7 +12,7 @@
 //define("DB_USER","root"); 
 //define("DB_PWORD","");
 
-define("DB_HOST", 'localhost');   
+define("DB_HOST", '10.0.2.2');   
 define("DB_NAME", 'csashesi_kutorkor-kotey-afutu');
 define("DB_PORT", 3306); 
 define("DB_USER","csashesi_kk15"); 
